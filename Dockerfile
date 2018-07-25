@@ -4,7 +4,6 @@ RUN apk -U add ca-certificates
 
 EXPOSE 8080
 
-ADD  hello-world /bin/hello-world
-ADD config.yml.dist /etc/hello-world/config.yml
+ADD hello-world /bin/hello-world
 
-CMD ["hello-world", "-config", "/etc/hello-world/config.yml"]
+CMD ["hello-world"]
